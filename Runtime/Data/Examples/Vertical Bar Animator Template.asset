@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b744645490949f7aba3eda5461d30c, type: 3}
+  m_Name: Vertical Bar Animator Template
+  m_EditorClassIdentifier: 
+  animationDuration: 1.5
+  barMoveHeight: 50
+  delayBetweenBars: 0.2
+  endCycleDelay: 1
