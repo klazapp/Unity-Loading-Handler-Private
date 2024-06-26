@@ -1,8 +1,10 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace com.Klazapp.Utility
 {
-    public class LoadingAnimator : MonoBehaviour
+    public class CircularDotLoadingAnimator : MonoBehaviour
     {
         #region Variables
         [Header("Animated Rect Transforms")]

@@ -15,5 +15,18 @@ namespace com.Klazapp.Utility
         {
             OnLoadingEnded?.Invoke();
         }
+        
+        public static event Action OnProgressLoadingStarted;
+        public static void InvokeProgressLoadingStarted()
+        {
+            OnProgressLoadingStarted?.Invoke();
+        }
+        
+        public static event Action OnProgressLoadingEnded;
+        public static void InvokeProgressLoadingEnded()
+        {
+            OnProgressLoadingEnded?.Invoke();
+        }
+        
     }
 }

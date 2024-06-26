@@ -3,52 +3,24 @@ using UnityEngine;
 
 namespace com.Klazapp.Utility
 {
-    public class LoadingUIManager : MonoBehaviour
+    public class LoadingHandler : MonoBehaviour
     {
         #region Variables
         [Header("Canvas")]
         public Canvas canvas;
         #endregion
-        
-        #region Lifecycle Flow
-        private void OnEnable()
-        {
-            LoadingEventManager.OnLoadingStarted += LoadingStartedCallback;
-            LoadingEventManager.OnLoadingEnded += LoadingEndedCallback;
-        }
-
-        private void OnDisable()
-        {
-            LoadingEventManager.OnLoadingStarted -= LoadingStartedCallback;
-            LoadingEventManager.OnLoadingEnded -= LoadingEndedCallback;
-        }
-        #endregion
 
         #region Modules
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private void EnableCanvas()
+        protected void EnableCanvas()
         {
             canvas.enabled = true;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private void DisableCanvas()
+        protected void DisableCanvas()
         {
             canvas.enabled = false;
-        }
-        #endregion
-        
-        #region Callback
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private void LoadingStartedCallback()
-        {
-            EnableCanvas();
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private void LoadingEndedCallback()
-        {
-            DisableCanvas();
         }
         #endregion
     }

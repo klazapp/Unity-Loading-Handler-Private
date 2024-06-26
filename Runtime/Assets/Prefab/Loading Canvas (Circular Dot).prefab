@@ -312,8 +312,8 @@ GameObject:
   - component: {fileID: 8004603680266856124}
   - component: {fileID: 50859855557862075}
   - component: {fileID: 4077488206346438275}
-  - component: {fileID: 3893492395558688180}
-  - component: {fileID: 992201201489802585}
+  - component: {fileID: 328472998879884275}
+  - component: {fileID: 6941567975363916550}
   m_Layer: 5
   m_Name: Loading Canvas (Circular Dot)
   m_TagString: Untagged
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3893492395558688180
+--- !u!114 &328472998879884275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -419,11 +419,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2780930380482582458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61d25528f57f342c5b4f85001c61ec8a, type: 3}
+  m_Script: {fileID: 11500000, guid: fecb820d016315642ad74e062b4103f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 8004603680266856124}
---- !u!114 &992201201489802585
+--- !u!114 &6941567975363916550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2780930380482582458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b54b78eaf6f044bb5b84768f8ef2c024, type: 3}
+  m_Script: {fileID: 11500000, guid: 666eb7077b4703140abe30ba86143bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animatedRectTransforms:

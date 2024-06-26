@@ -87,10 +87,10 @@ GameObject:
   - component: {fileID: 2342230872372279875}
   - component: {fileID: 3376435299778370384}
   - component: {fileID: 3530368298235062013}
-  - component: {fileID: 4945103611652321751}
+  - component: {fileID: 1395655309538705206}
   - component: {fileID: 1526214699865708152}
   m_Layer: 5
-  m_Name: Loading Canvas (Vertical Bar)
+  m_Name: Loading Canvas (Jumping Bar)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4945103611652321751
+--- !u!114 &1395655309538705206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3539337684156988401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61d25528f57f342c5b4f85001c61ec8a, type: 3}
+  m_Script: {fileID: 11500000, guid: a994a3c0fd248b2408050d372fc55002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 2342230872372279875}
@@ -430,8 +430,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Loading
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0da41c81058744683b33a64d80e99960, type: 2}
-  m_sharedMaterial: {fileID: 3053319544038484095, guid: 0da41c81058744683b33a64d80e99960, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
