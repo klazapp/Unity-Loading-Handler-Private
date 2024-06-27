@@ -9,9 +9,7 @@ namespace com.Klazapp.Utility
         [Header("Slider")]
         [SerializeField]
         private Slider slider;
-        
-        public float ProgressValue { get; set; }
-        
+    
         [Header("Progress Bar Animator Template")]
         [SerializeField]
         private LoadingProgressTemplate loadingProgressTemplate;
@@ -23,7 +21,8 @@ namespace com.Klazapp.Utility
             if (loadingProgressTemplate == null)
                 return;
 
-            loadingProgressTemplate.ProgressBarLoader(slider, ProgressValue);
+            var currentProgress = LoadingEventManager.RetrieveProgress();
+            loadingProgressTemplate.ProgressBarLoader(slider, currentProgress);
         }
         #endregion
     }

@@ -17,9 +17,21 @@ namespace com.Klazapp.Utility
         }
         
         public static event Action OnProgressLoadingStarted;
+        
         public static void InvokeProgressLoadingStarted()
         {
             OnProgressLoadingStarted?.Invoke();
+        }
+        
+        private static Func<float> onProgressLoadingRegistered;
+        public static void RegisterProgressLoader(Func<float> progress)
+        {
+            onProgressLoadingRegistered = progress;
+        }
+        
+        public static float RetrieveProgress()
+        {
+            return onProgressLoadingRegistered?.Invoke() ?? 0f;
         }
         
         public static event Action OnProgressLoadingEnded;
@@ -27,6 +39,5 @@ namespace com.Klazapp.Utility
         {
             OnProgressLoadingEnded?.Invoke();
         }
-        
     }
 }
