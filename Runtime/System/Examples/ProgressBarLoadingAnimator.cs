@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,10 @@ namespace com.Klazapp.Utility
         [SerializeField]
         private Slider slider;
     
+        [Header("Progress Text")]
+        [SerializeField]
+        private TextMeshProUGUI progressionText;
+        
         [Header("Progress Bar Animator Template")]
         [SerializeField]
         private LoadingProgressTemplate loadingProgressTemplate;
@@ -23,6 +28,9 @@ namespace com.Klazapp.Utility
 
             var currentProgress = LoadingEventManager.RetrieveProgress();
             loadingProgressTemplate.ProgressBarLoader(slider, currentProgress);
+
+            var progressDownload = LoadingEventManager.RetrieveProgressDownload();
+            loadingProgressTemplate.ProgressDownloadTextLoader(progressionText, progressDownload);
         }
         #endregion
     }

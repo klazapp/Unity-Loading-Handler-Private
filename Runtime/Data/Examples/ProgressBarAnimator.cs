@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,11 @@ namespace com.Klazapp.Utility
         public override void ProgressBarLoader(Slider slider, float sliderValue)
         {
             slider.value = sliderValue;
+        }
+
+        public override void ProgressDownloadTextLoader(TextMeshProUGUI progressText, string progressTexValue)
+        {
+            progressText.text = progressTexValue;
         }
     }
 }

@@ -34,6 +34,17 @@ namespace com.Klazapp.Utility
             return onProgressLoadingRegistered?.Invoke() ?? 0f;
         }
         
+        private static Func<string> onProgressDownloadingRegistered;
+        public static void RegisterProgressDownloadingLoader(Func<string> progress)
+        {
+            onProgressDownloadingRegistered = progress;
+        }
+        
+        public static string RetrieveProgressDownload()
+        {
+            return onProgressDownloadingRegistered?.Invoke() ?? "";
+        }
+        
         public static event Action OnProgressLoadingEnded;
         public static void InvokeProgressLoadingEnded()
         {
