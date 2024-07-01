@@ -10,6 +10,9 @@
     "data"
   ],
   "category": "Utility",
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.9"
+  },
     "author": {
       "name": "Klazapp",
       "email": "klazapp@klazapp.com",
